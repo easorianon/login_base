@@ -87,42 +87,8 @@
                                 <!--begin::Title-->
                                 <h1 class="text-gray-900 fw-bolder mb-3">Registrarse</h1>
                                 <!--end::Title-->
-                                <!--begin::Subtitle-->
-                                <div class="text-gray-500 fw-semibold fs-6">Tus Campañas Sociales</div>
-                                <!--end::Subtitle=-->
                             </div>
                             <!--begin::Heading-->
-                            <!--begin::Opciones de inicio de sesión-->
-                            <div class="row g-3 mb-9">
-                                <!--begin::Col-->
-                                <div class="col-md-6">
-                                    <!--begin::Enlace de Google-->
-                                    <a href="/auth/google/redirect"
-                                        class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg"
-                                            class="h-15px me-3" />Registrarse con Google</a>
-                                    <!--end::Enlace de Google-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-md-6">
-                                    <!--begin::Enlace de Github-->
-                                    <a href="/auth/github/redirect"
-                                        class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/github-1.svg"
-                                            class="theme-light-show h-15px me-3" />
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/github-1.svg"
-                                            class="theme-dark-show h-15px me-3" />Registrarse con Github</a>
-                                    <!--end::Enlace de Github-->
-                                </div>
-                                <!--end::Col-->
-                            </div>
-                            <!--end::Opciones de inicio de sesión-->
-                            <!--begin::Separador-->
-                            <div class="separator separator-content my-14">
-                                <span class="w-125px text-gray-500 fw-semibold fs-7">O con correo electrónico</span>
-                            </div>
-                            <!--end::Separador-->
                             <div class="row">
                                 <div class="col-12 col-md-6 col-sm-6 mb-5">
                                     <!--begin::Nombre-->

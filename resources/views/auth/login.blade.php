@@ -87,42 +87,8 @@
                                 <!--begin::Título-->
                                 <h1 class="text-gray-900 fw-bolder mb-3">Iniciar sesión</h1>
                                 <!--end::Título-->
-                                <!--begin::Subtítulo-->
-                                <div class="text-gray-500 fw-semibold fs-6">Tus campañas sociales</div>
-                                <!--end::Subtítulo=-->
                             </div>
                             <!--begin::Encabezado-->
-                            <!--begin::Opciones de inicio de sesión-->
-                            <div class="row g-3 mb-9">
-                                <!--begin::Col-->
-                                <div class="col-md-6">
-                                    <!--begin::Enlace de Google=-->
-                                    <a href="/auth/google/redirect"
-                                        class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg"
-                                            class="h-15px me-3" />Iniciar sesión con Google</a>
-                                    <!--end::Enlace de Google=-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-md-6">
-                                    <!--begin::Enlace de Github=-->
-                                    <a href="/auth/github/redirect"
-                                        class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/github-1.svg"
-                                            class="theme-light-show h-15px me-3" />
-                                        <img alt="Logo" src="assets/media/svg/brand-logos/github-1.svg"
-                                            class="theme-dark-show h-15px me-3" />Iniciar sesión con Github</a>
-                                    <!--end::Enlace de Github=-->
-                                </div>
-                                <!--end::Col-->
-                            </div>
-                            <!--end::Opciones de inicio de sesión-->
-                            <!--begin::Separador-->
-                            <div class="separator separator-content my-14">
-                                <span class="w-125px text-gray-500 fw-semibold fs-7">O con correo electrónico</span>
-                            </div>
-                            <!--end::Separador-->
                             <!--begin::Grupo de entrada=-->
                             <div class="fv-row mb-8">
                                 <!--begin::Correo electrónico-->
