@@ -1,8 +1,8 @@
-// Mendapatkan elemen dengan ID "tanggal" dan "jam"
+// Obtener elementos con ID "tanggal" y "jam"
 var tanggalElement = document.getElementById('tanggal');
 var jamElement = document.getElementById('jam');
 
-// Fungsi untuk mengupdate waktu setiap detik
+// Función para actualizar el tiempo cada segundo
 function updateWaktu() {
     var tanggalSekarang = new Date();
     var hari = tanggalSekarang.getDay();
@@ -21,27 +21,27 @@ function updateWaktu() {
     jamElement.innerHTML = formatJam;
 }
 
-// Memanggil fungsi updateWaktu setiap detik
+// Llamar a la función updateWaktu cada segundo
 setInterval(updateWaktu, 1000);
 
-// Fungsi untuk menambahkan angka nol di depan angka tunggal (misalnya, 1 menjadi 01)
+// Función para agregar cero al frente de un número individual (por ejemplo, 1 se convierte en 01)
 function padZero(angka) {
     return (angka < 10 ? '0' : '') + angka;
 }
 
-// Fungsi untuk mendapatkan nama bulan dalam bahasa Indonesia berdasarkan angka bulan
+// Función para obtener el nombre del mes en indonesio según el número del mes
 function getBulanIndonesia(bulan) {
     var namaBulan = [
-        'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
-        'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+        'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+        'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
     ];
 
     return namaBulan[bulan - 1];
 }
 
-// Fungsi untuk mendapatkan nama hari dalam bahasa Indonesia berdasarkan angka hari
+// Función para obtener el nombre del día en indonesio según el número del día
 function getHariIndonesia(hari) {
-    var namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+    var namaHari = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
     return namaHari[hari];
 }

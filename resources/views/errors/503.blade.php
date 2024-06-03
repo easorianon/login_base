@@ -3,7 +3,7 @@
 <!--begin::Head-->
 
 <head>
-    <title>{{ config('app.name', 'Laravel') }} | Maintenance</title>
+    <title>{{ config('app.name', 'Laravel') }} | Mantenimiento</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="assets/media/favicon.ico" />
@@ -11,7 +11,7 @@
     <meta name="color-scheme" content="light">
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Login" />
+    <meta name="title" content="Iniciar sesión" />
 
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
@@ -21,14 +21,15 @@
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
     <script>
-        // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+        // Evita que el sitio se cargue en un marco sin permiso (click-jacking)
+        if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
     </script>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
 
 <body id="kt_body" class="app-blank app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
-    <!--begin::Theme mode setup on page load-->
+    <!--begin::Configuración del modo de tema al cargar la página-->
     <script>
         var defaultThemeMode = "light";
         var themeMode;
@@ -48,10 +49,10 @@
             document.documentElement.setAttribute("data-bs-theme", themeMode);
         }
     </script>
-    <!--end::Theme mode setup on page load-->
+    <!--end::Configuración del modo de tema al cargar la página-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
-        <!--begin::Page bg image-->
+        <!--begin::Imagen de fondo de la página-->
         <style>
             body {
                 background-image: url('assets/media/auth/bg18.jpg');
@@ -61,44 +62,44 @@
                 background-image: url('assets/media/auth/bg18-dark.jpg');
             }
         </style>
-        <!--end::Page bg image-->
-        <!--begin::Authentication - Signup Welcome Message -->
+        <!--end::Imagen de fondo de la página-->
+        <!--begin::Autenticación - Mensaje de bienvenida al registro -->
         <div class="d-flex flex-column flex-center flex-column-fluid">
-            <!--begin::Content-->
+            <!--begin::Contenido-->
             <div class="d-flex flex-column flex-center text-center p-10">
-                <!--begin::Wrapper-->
+                <!--begin::Contenedor-->
                 <div class="card card-flush w-lg-650px py-5">
                     <div class="card-body py-15 py-lg-20">
-                        <!--begin::Title-->
+                        <!--begin::Título-->
                         <h1 class="fw-bolder fs-2hx text-gray-900 mb-4">
-                            We&rsquo;ll be back soon!
+                            ¡Volveremos pronto!
                         </h1>
-                        <!--end::Title-->
-                        <!--begin::Text-->
+                        <!--end::Título-->
+                        <!--begin::Texto-->
                         <div class="fw-semibold fs-6 text-gray-500 mb-7">
-                            Sorry for the inconvenience, but we're currently performing some maintenance. If
-                            you need to, you can always <a href="mailto:muhammadmauribi@gmail.com">contact us</a>.
-                            Otherwise, we'll be back online shortly!
+                            Disculpa las molestias, pero actualmente estamos realizando tareas de mantenimiento. Si
+                            necesitas, siempre puedes <a href="mailto:">contactarnos</a>.
+                            ¡Volveremos en línea en breve!
                         </div>
                         <p class="fw-semibold fs-6 text-gray-500 mb-7">
-                            &mdash; {{ config('app.name', 'Laravel') }} Team
+                            &mdash; Equipo de {{ config('app.name', 'Laravel') }}
                         </p>
-                        <!--end::Text-->
-                        <!--begin::Illustration-->
+                        <!--end::Texto-->
+                        <!--begin::Ilustración-->
                         <div class="mb-3">
                             <img src="assets/media/auth/maintenance.png" class="mw-100 mh-300px theme-light-show"
                                 alt="" />
                             <img src="assets/media/auth/maintenance-dark.png" class="mw-100 mh-300px theme-dark-show"
                                 alt="" />
                         </div>
-                        <!--end::Illustration-->
+                        <!--end::Ilustración-->
                     </div>
                 </div>
-                <!--end::Wrapper-->
+                <!--end::Contenedor-->
             </div>
-            <!--end::Content-->
+            <!--end::Contenido-->
         </div>
-        <!--end::Authentication - Signup Welcome Message-->
+        <!--end::Autenticación - Mensaje de bienvenida al registro-->
     </div>
     <!--end::Root-->
     <!--begin::Javascript-->

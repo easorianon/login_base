@@ -19,6 +19,6 @@ class Admin
             return $next($request);
         }
 
-        return back()->withToastError('You are not allowed to access that URL!');
+        return back()->withToastError('No estas autorizado para acceder a esta ruta!');
     }
 }

@@ -45,36 +45,30 @@
                                     <span class="path4"></span>
                                 </i>
                             </span>
-                            <span class="menu-title">Dashboard</span>
+                            <span class="menu-title">Inicio</span>
                         </a>
                         <!--end:Menu link-->
                     </div>
                     <!--end:Menu item-->
-                    <!--begin:Menu item-->
-                    <div class="menu-item pt-5">
-                        <!--begin:Menu content-->
-                        <div class="menu-content">
-                            <span class="menu-heading fw-bold text-uppercase fs-7">Other Menu</span>
+                @if(request()->user()->role === 'admin')
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                            <!--begin:Menu link-->
+                            <a class="menu-link" href="https://preview.keenthemes.com/html/keen/docs/base/utilities"
+                                target="_blank">
+                                <span class="menu-icon">
+                                    <i class="ki-duotone ki-rocket fs-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                </span>
+                                <span class="menu-title">Menu One</span>
+                            </a>
+                            <!--end:Menu link-->
                         </div>
-                        <!--end:Menu content-->
+                        <!--end:Menu item-->
                     </div>
-                    <!--end:Menu item-->
-                    <!--begin:Menu item-->
-                    <div class="menu-item">
-                        <!--begin:Menu link-->
-                        <a class="menu-link" href="https://preview.keenthemes.com/html/keen/docs/base/utilities"
-                            target="_blank">
-                            <span class="menu-icon">
-                                <i class="ki-duotone ki-rocket fs-2">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </i>
-                            </span>
-                            <span class="menu-title">Menu One</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
+                @endif
                 </div>
                 <!--end::Menu-->
             </div>
